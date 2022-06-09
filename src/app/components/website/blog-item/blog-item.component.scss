@@ -12,9 +12,9 @@
     }
     &-detail {
         &-title {
-            font-size: 1.6rem;
             margin: 0;
             &-link {
+                font-size: 2rem;
                 text-decoration: none;
                 color: black;
                 transition: all ease-in;
@@ -28,7 +28,7 @@
             display: flex;
             margin-left: -1.2rem;
             span {
-                font-size: 18px;
+                font-size: 1rem;
                 display: inline-block;
                 padding: 0 1.2rem;
             }
@@ -51,6 +51,38 @@
             width: 100%;
             object-fit: cover;
             height: auto;
+        }
+        &-detail {
+            &-title {
+                margin: 0;
+                &-link {
+                    font-size: 3rem;
+                    text-decoration: none;
+                    color: black;
+                    transition: all ease-in;
+                    &:hover {
+                        color: red;
+                    }
+                }
+            }
+            &-time {
+                margin-top: 1rem;
+                display: flex;
+                margin-left: -1.2rem;
+                span {
+                    font-size: 2rem;
+                    display: inline-block;
+                    padding: 0 1.2rem;
+                }
+                :first-child {
+                    border-right: 1px solid black;
+                }
+            }
+            &-desc {
+                margin-top: 1rem;
+                font-size: 2rem;
+                line-height: 1.4;
+            }
         }
     }
 }

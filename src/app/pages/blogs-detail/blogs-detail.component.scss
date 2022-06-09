@@ -11,11 +11,11 @@
 .information {
     display: flex;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 2rem;
     :first-child {
-        margin-right: 2rem;
+        margin-right: 1.2rem;
         display: inline-block;
-        padding: 5px 10px;
+        padding: 10px 30px;
         background-color: black;
         color: white;
         border-radius:15px;
@@ -31,5 +31,21 @@
     }
     &__content {
         line-height: 1.5;
+    }
+}
+@media screen and (max-width:567px) {
+    .information {
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+        :first-child {
+            margin-right: 2rem;
+        }
+    }
+    .content{
+        &__content {
+            line-height: 1.5;
+            font-size: 2rem;
+        }
     }
 }

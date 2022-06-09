@@ -7,3 +7,17 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 30px;
 }
+@media screen and (max-width:567px){
+    .container{
+        width: 100%;
+        padding: 0 5%;
+    }
+    .heading{
+        padding-left: 2rem;
+        font-size: 3rem;
+    }
+    .blogs {
+        grid-template-columns: 1fr;
+    }
+
+}
