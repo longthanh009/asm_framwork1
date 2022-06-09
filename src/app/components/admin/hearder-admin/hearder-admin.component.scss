@@ -4,20 +4,26 @@
         display: flex;
         align-items: center;
         .admin {
-            width: 50px;
-            text-align: right;
+            width: 100px;
             .active__admin {
+                display: flex;
+                align-items: center;
+                padding-right: 50px;
                 .admin__avatar {
-                    width: 50px;
-                    height: 50px;
-                    border-radius: 40%;
+                    box-shadow: rgb(116, 115, 115) 2px 2px 15px;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 45%;
                 }
+            }
+            .drop__menu {
+                margin-top: 50px;
             }
         }
         .logo__admin {
             flex: 1;
             font-size: 3rem;
-            padding: 0.5rem 0;
+            padding: 0.5rem 3rem;
             color: white;
         }
     }

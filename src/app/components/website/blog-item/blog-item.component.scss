@@ -14,7 +14,7 @@
         &-title {
             margin: 0;
             &-link {
-                font-size: 2rem;
+                font-size: 1.5rem;
                 text-decoration: none;
                 color: black;
                 transition: all ease-in;
@@ -56,7 +56,8 @@
             &-title {
                 margin: 0;
                 &-link {
-                    font-size: 3rem;
+                    font-size: 1.5rem;
+                    font-weight: bold;
                     text-decoration: none;
                     color: black;
                     transition: all ease-in;
@@ -70,7 +71,7 @@
                 display: flex;
                 margin-left: -1.2rem;
                 span {
-                    font-size: 2rem;
+                    font-size: 1rem;
                     display: inline-block;
                     padding: 0 1.2rem;
                 }
@@ -80,7 +81,7 @@
             }
             &-desc {
                 margin-top: 1rem;
-                font-size: 2rem;
+                font-size: 1.2rem;
                 line-height: 1.4;
             }
         }

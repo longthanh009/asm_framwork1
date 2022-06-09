@@ -2,6 +2,8 @@
     padding: 0 10%;
 }
 .title {
+    width: 80%;
+    margin: auto;
     &__name {
         margin-bottom: 3rem;
         text-align:  center;
@@ -11,7 +13,7 @@
 .information {
     display: flex;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     :first-child {
         margin-right: 1.2rem;
         display: inline-block;
@@ -30,14 +32,18 @@
         }
     }
     &__content {
+        font-size: 1.3rem;
         line-height: 1.5;
     }
 }
 @media screen and (max-width:567px) {
+    .title__name{
+        font-size: 2rem;
+    }
     .information {
         display: flex;
         align-items: center;
-        font-size: 2rem;
+        font-size: 1rem;
         :first-child {
             margin-right: 2rem;
         }
@@ -45,7 +51,7 @@
     .content{
         &__content {
             line-height: 1.5;
-            font-size: 2rem;
+            font-size: 1.2rem;
         }
     }
 }
