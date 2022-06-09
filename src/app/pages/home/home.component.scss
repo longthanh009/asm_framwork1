@@ -30,12 +30,14 @@ $primary : rgb(255, 106, 0);
         }
     }
     &__avatar {
+        text-align: center;
         flex: 1;
         padding-left: 3rem;
     &-image {
-        width: 100%;
+        width: 250px;
+        height: 250px;
         object-fit: cover;
-        border-radius: 50%;
+        border-radius: 55%;
     }
     }
 }
@@ -65,6 +67,7 @@ $primary : rgb(255, 106, 0);
 // reponsive
 @media screen and (max-width: 576px){
     .information {
+        width: 90%;
         flex-direction: column;
         justify-content: center;
         &__infor {
