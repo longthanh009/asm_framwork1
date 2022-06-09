@@ -1,0 +1,111 @@
+$primary : rgb(255, 106, 0);
+.information {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    &__infor {
+        width: 50%;
+        &-name {
+            margin: 0;
+            font-size: 3rem;
+            line-height: 1.2;
+            &-tick {
+                color: $primary;
+            }
+        }
+        &-desc {
+            font-size: 1rem;
+            line-height: 1.3;
+        }
+        .btn {
+            color: white;
+            background-color:$primary;
+            border: none;
+            font-size: 1.2rem;
+            padding: 1rem 2.5rem;
+            border-radius: 1.1rem;
+        }
+        .btn__dowload{
+            margin-top: 2rem;
+        }
+    }
+    &__avatar {
+        flex: 1;
+        padding-left: 3rem;
+    &-image {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    }
+}
+.recent {
+    background-color: rgb(234, 248, 248);
+    padding: 20px 10%;
+    margin-top: 3rem;
+    .title-recent {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .posts {
+        padding-top: 1.5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+    }
+}
+.my__work {
+    padding: 0 10%;
+    background-color: white;
+    .title {
+        padding-top: 2rem;
+    }
+}
+// reponsive
+@media screen and (max-width: 576px){
+    .information {
+        flex-direction: column;
+        justify-content: center;
+        &__infor {
+            margin-top: 2rem;
+            width: 100%;
+            text-align: center;
+            order: 2;
+            .btn__dowload{
+                margin-top: 1.5rem;
+                width: 80%;
+                border-radius: 0.3rem;
+                margin-bottom: 2rem;
+            }
+            &-desc {
+                margin-top: 1.5rem;
+                font-size: 1rem;
+                line-height: 1.3;
+            }
+        }
+    }
+    .recent {
+        padding: 40px 3%;
+        .title-recent{
+            text-align: center;
+            display: block;
+            font-size: 1.2rem;
+            a {
+                display: none;
+            }
+        }
+        .posts {
+            grid-template-columns: 1fr;
+        }
+    }
+    .my__work {
+        padding: 0 3%;
+        background-color: white;
+        .title {
+            text-align: center;
+            padding-top: 2rem;
+            font-size: 1.2rem;
+        }
+    }
+}

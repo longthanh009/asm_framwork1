@@ -1,0 +1,87 @@
+.projects__item {
+    display: flex;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid rgb(216, 216, 216);
+    &-image{
+        width: 40%;
+        & img {
+            width: 100%;
+            border-radius: 0.6rem;
+            object-fit: cover;
+        }
+    }
+    &-detail {
+        padding: 0 2rem;
+        &-title {
+            margin: 0;
+            &-link {
+                color: black;
+                text-decoration: none;
+                &:hover {
+                    color: red;
+                }
+            }
+        }
+        &-time {
+            display: flex;
+            margin-top: 1rem;
+            align-items: center;
+            :first-child {
+                background-color: black;
+                color: white;
+                display: inline-block;
+                padding: 5px 10px;
+                border-radius: 0.8rem;
+                margin-right: 1rem;
+            }
+        }
+        &-desc {
+            margin-top: 1rem;
+            font-family: 1rem;
+        }
+    }
+}
+@media screen and (max-width: 576px){
+    .projects__item{
+        flex-direction: column;
+        &-image{
+            width: 100%;
+            & img {
+                width: 100%;
+                border-radius: 0.6rem;
+                object-fit: cover;
+            }
+        }
+        &-detail {
+            &-title {
+                font-size: 1.7rem;
+                margin: 0;
+                &-link {
+                    color: black;
+                    text-decoration: none;
+                    &:hover {
+                        color: red;
+                    }
+                }
+            }
+            &-time {
+                display: flex;
+                margin-top: 1rem;
+                align-items: center;
+                font-size: 1rem;
+                :first-child {
+                    background-color: black;
+                    color: white;
+                    display: inline-block;
+                    padding: 5px 10px;
+                    border-radius: 0.8rem;
+                    margin-right: 1rem;
+                }
+            }
+            &-desc {
+                margin-top: 1rem;
+                font-family: 1rem;
+            }
+        }
+    }
+}

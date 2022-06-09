@@ -1,0 +1,24 @@
+.container {
+    background-color: rgb(165, 165, 248);
+    .hearder {
+        display: flex;
+        align-items: center;
+        .admin {
+            width: 50px;
+            text-align: right;
+            .active__admin {
+                .admin__avatar {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 40%;
+                }
+            }
+        }
+        .logo__admin {
+            flex: 1;
+            font-size: 3rem;
+            padding: 0.5rem 0;
+            color: white;
+        }
+    }
+}

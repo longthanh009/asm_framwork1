@@ -1,0 +1,53 @@
+$primary : rgb(255, 106, 0);
+.navbar {
+    .logo {
+        text-align: center;
+        margin-bottom: 40px;
+        .brand {
+            font-size: 2.5rem;
+            color: black;
+            .brand-name {
+                color: $primary;
+            }
+        }
+    }
+    margin-bottom: 4rem;
+    .main-menu{
+        justify-content: center;
+        width: 40%;
+        margin: auto;
+        display: flex;
+        list-style: none;
+        .active::before{
+            transform: scaleX(1);
+            opacity: 1;
+        }
+        &__link{
+            position: relative;
+            &:hover::before{
+                transform: scaleX(1);
+                opacity: 1;
+            }
+            &::before {
+                transition: 0.3s ease-in-out;
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 3px;
+                background-color: black;
+                left: 0;
+                bottom: 0;
+                transform: scaleX(0);
+                opacity: 0;
+            }
+            display:  inline-block;
+            padding: 5px 20px;
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    }
+}
+
+

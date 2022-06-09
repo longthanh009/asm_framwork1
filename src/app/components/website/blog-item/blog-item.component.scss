@@ -1,0 +1,45 @@
+.post__item {
+    padding: 20px;
+    background-color: white;
+    box-shadow: 3px 2px 15px gainsboro;
+    border-radius: 1rem;
+    .post__item-image{
+        margin-bottom: 1rem;
+        border-radius: 0.5rem;
+        width: 100%;
+        object-fit: cover;
+        height: 230px;
+    }
+    &-detail {
+        &-title {
+            font-size: 1.6rem;
+            margin: 0;
+            &-link {
+                text-decoration: none;
+                color: black;
+                transition: all ease-in;
+                &:hover {
+                    color: red;
+                }
+            }
+        }
+        &-time {
+            margin-top: 1rem;
+            display: flex;
+            margin-left: -1.2rem;
+            span {
+                font-size: 18px;
+                display: inline-block;
+                padding: 0 1.2rem;
+            }
+            :first-child {
+                border-right: 1px solid black;
+            }
+        }
+        &-desc {
+            margin-top: 1rem;
+            font-size: 1rem;
+            line-height: 1.4;
+        }
+    }
+}

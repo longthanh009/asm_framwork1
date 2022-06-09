@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="hearder">
+        <a href="" class="logo__admin">Admin</a>
+        <div class="admin">
+            <a class="active__admin" nz-dropdown nzTrigger="click" [nzDropdownMenu]="menu">
+                <img class="admin__avatar"
+                    src="https://www.w3schools.com/howto/img_avatar.png" alt="">
+                <i nz-icon nzType="down"></i>
+            </a>
+            <nz-dropdown-menu class="dropdown" #menu="nzDropdownMenu">
+                <ul nz-menu class="drop__menu">
+                    <li nz-menu-item class="drop__menu-item">
+                        <a href="" class="drop__menu-link">Website</a>
+                    </li>
+                    <li nz-menu-item class="drop__menu-item">
+                        <a href="" class="drop__menu-link">Logout</a>
+                    </li>
+                    <li nz-menu-item class="drop__menu-item">
+                        <a href=""  class="drop__menu-link">Nghỉ</a>
+                    </li>
+                </ul>
+            </nz-dropdown-menu>
+        </div>
+    </div>
+</div>
