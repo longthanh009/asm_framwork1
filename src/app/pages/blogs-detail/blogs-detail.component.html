@@ -1,26 +1,25 @@
-<article class="blog">
+<article class="blog" *ngIf="blog">
     <div class="title">
-        <h1 class="title__name">Designing Dashboards with usability in mind</h1>
+        <h1 class="title__name">{{blog.title}}</h1>
     </div>
     <div class="information">
-        <span>2020</span>
+        <span>{{blog.createdAt}}</span>
         <span>Dashboard, User Experience Design</span>
     </div>
     <div class="content">
         <figure class="content__image">
-            <img src="https://www.imgacademy.com/sites/default/files/2009-stadium-about.jpg"
+            <img src={{blog.img}}
                 alt="">
         </figure>
-        <p class="content__content">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet.
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet.
+        <p class="content__content">
+            {{blog.center}}
         </p>
         <figure class="content__image">
             <img src="https://www.imgacademy.com/sites/default/files/2009-stadium-about.jpg"
                 alt="">
         </figure>
+        <p class="content__content">
+            {{blog.description}}
+        </p>
     </div>
 </article>

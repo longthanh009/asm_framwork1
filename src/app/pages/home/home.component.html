@@ -21,8 +21,8 @@
         <a href="">View all</a>
     </div>
     <div class="posts">
-        <app-blog-item></app-blog-item>
-        <app-blog-item></app-blog-item>
+        <app-blog-item [blog]="blogs[0]"></app-blog-item>
+        <app-blog-item [blog]="blogs[1]"></app-blog-item>
         <!-- <app-blog-item></app-blog-item> -->
 
     </div>
@@ -33,11 +33,7 @@
             My works
         </h2>
     </div>
-    <section class="projects">
-        <app-project-item></app-project-item>
-        <app-project-item></app-project-item>
-        <app-project-item></app-project-item>
-        <app-project-item></app-project-item>
-        <app-project-item></app-project-item>
+    <section class="projects" *ngFor="let item of projects">
+        <app-project-item [project]="item"></app-project-item>
     </section>
 </div>

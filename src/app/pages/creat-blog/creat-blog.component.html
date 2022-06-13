@@ -1,0 +1,42 @@
+<div class="container">
+    <h2>New Blogs</h2>
+    <form (ngSubmit)="onSubmit()" #formAdd="ngForm">
+        <div class="form__item">
+            <label for="">Title</label>
+            <br>
+            <input #title="ngModel" required [(ngModel)]="blog.title"
+                name="title" nz-input placeholder="Basic usage" />
+            <!-- <label for="" *ngIf="title.errors?.['required']"
+                class="lable-err">Không để trống</label> -->
+        </div>
+        <br>
+        <div class="form__item">
+            <label for="">Mounting description</label>
+            <br>
+            <textarea #center="ngModel" required [(ngModel)]="blog.center"
+                name="center" rows="2" nz-input></textarea>
+            <!-- <label for="" *ngIf="center.errors?.['required']"
+                class="lable-err">Không để trống</label> -->
+        </div>
+        <br>
+        <div class="form__item">
+            <label for="">Image</label>
+            <br>
+            <input #img="ngModel" required [(ngModel)]="blog.img" name="img"
+                nz-input placeholder="Basic usage" />
+            <!-- <label for="" *ngIf="img.errors?.['required']"
+                class="lable-err">Không để trống</label> -->
+        </div>
+        <br>
+        <div class="form__item">
+            <label for="">description</label>
+            <br>
+            <textarea [(ngModel)]="blog.description" name="description" rows="4"
+                nz-input></textarea>
+        </div>
+        <br>
+        <div  class="form__item">
+            <button [disabled]="!formAdd.valid" nz-button nzType="primary">Submit</button>
+        </div>
+    </form>
+</div>

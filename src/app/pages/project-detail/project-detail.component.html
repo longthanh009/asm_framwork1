@@ -1,0 +1,28 @@
+<article class="blog" *ngIf="project">
+    <div class="title">
+        <h1 class="title__name">{{project.title}}</h1>
+    </div>
+    <div class="btn-preview">
+        <a href={{project.demo}}>Preview</a>
+    </div>
+    <div class="information">
+        <span>{{project.createdAt}}</span>
+        <span>Dashboard, User Experience Design</span>
+    </div>
+    <div class="content">
+        <figure class="content__image">
+            <img src={{project.img}}
+                alt="">
+        </figure>
+        <p class="content__content">
+            {{project.center}}
+        </p>
+        <figure class="content__image">
+            <img src="https://www.imgacademy.com/sites/default/files/2009-stadium-about.jpg"
+                alt="">
+        </figure>
+        <p class="content__content">
+            {{project.description}}
+        </p>
+    </div>
+</article>

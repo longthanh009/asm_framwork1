@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,SAAS,CAAC;EACN,KAAK,EAAE,IAAI;CACZ",
+    "sources": [
+        "creat-work.component.scss"
+    ],
+    "names": [],
+    "file": "creat-work.component.css"
+}

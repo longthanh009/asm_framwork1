@@ -1,0 +1,26 @@
+<div>
+    <h2>User Mannager</h2>
+    <div>
+        <nz-table #basicTable [nzData]="users">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let item of users, let i =index ">
+                <tr>
+                    <td>{{i+1}}</td>
+                    <td>{{item.name}}</td>
+                    <td>{{item.email}}</td>
+                    <td>
+                        <a nz-button routerLink="/admin/users/{{item._id}}/update" nzType="dashed">Edit</a>
+                        <button nz-button (click)="removeUser(item._id!)" nzType="primary">Remove</button>
+                    </td>
+                </tr>
+            </tbody>
+        </nz-table>
+    </div>
+</div>

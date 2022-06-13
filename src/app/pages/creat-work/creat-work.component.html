@@ -1,0 +1,46 @@
+<div class="container">
+    <h2>New Project</h2>
+    <form (ngSubmit)="onSubmit()" #formAdd="ngForm">
+        <div class="form__item">
+            <label for="">Title</label>
+            <br>
+            <input #title="ngModel" required  [(ngModel)]="project.title" name="title" nz-input placeholder="Basic usage" />
+        </div>
+        <br>
+        <div class="form__item">
+            <label for="">Category</label>
+            <br>
+            <nz-select #category="ngModel" required [(ngModel)]="project.category" name="category">
+                <nz-option  *ngFor="let option of categorys" nzValue={{option._id}} nzLabel={{option.name}}></nz-option>
+            </nz-select>
+        </div>  
+        <br>
+        <div class="form__item">
+            <label for="">Mounting description</label>
+            <br>
+            <textarea  #center="ngModel" required  [(ngModel)]="project.center" name="center" rows="2" nz-input></textarea> 
+        </div>
+        <br>
+        <div class="form__item">
+            <label for="">Link Demo</label>
+            <br>
+            <input  [(ngModel)]="project.demo" name="demo" nz-input placeholder="URL" />
+        </div>
+        <br>
+        <div class="form__item">
+            <label for="">Image</label>
+            <br>
+            <input  #img="ngModel" required  [(ngModel)]="project.img" name="img" nz-input placeholder="" />
+        </div>
+        <br>
+        <div class="form__item">
+            <label for="">description</label>
+            <br>
+            <textarea [(ngModel)]="project.description" name="description" rows="4" nz-input></textarea> 
+        </div>
+        <br>
+        <div class="form__item">
+            <button [disabled]="!formAdd.valid" nz-button nzType="primary">Submit</button>
+        </div>
+    </form>
+</div>

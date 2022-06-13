@@ -2,11 +2,7 @@
     <div class="heading">
         <h2>My works</h2>
     </div>
-    <section class="project">
-        <app-project-item></app-project-item>
-        <app-project-item></app-project-item>
-        <app-project-item></app-project-item>
-        <app-project-item></app-project-item>
-        <app-project-item></app-project-item>
+    <section class="project" *ngFor="let item of projects">
+        <app-project-item [project] ="item"></app-project-item>
     </section>
 </div>

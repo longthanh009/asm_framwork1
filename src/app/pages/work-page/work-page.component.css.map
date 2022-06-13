@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EACP,OAAO,EAAE,KAAK;EACd,UAAU,EAAE,IAAI;CACnB;;AACD,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EAC/B,AAAA,UAAU,CAAA;IACN,KAAK,EAAE,IAAI;IACX,OAAO,EAAE,IAAI;GAChB;EACD,AAAA,QAAQ,CAAA;IACJ,YAAY,EAAE,IAAI;IAClB,SAAS,EAAE,MAAM;GACpB",
+    "sources": [
+        "work-page.component.scss"
+    ],
+    "names": [],
+    "file": "work-page.component.css"
+}

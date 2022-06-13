@@ -1,0 +1,34 @@
+<div class="container">
+    <h2>New User</h2>
+    <form (ngSubmit)="onSubmit()" #formAdd="ngForm">
+        <div class="form__item">
+            <label for="">Name</label>
+            <br>
+            <input [(ngModel)]="user.name" name="name" nz-input />
+        </div>
+        <br>  
+        <div class="form__item">
+            <label for="">Email</label>
+            <br>
+            <input [(ngModel)]="user.email" name="email" nz-input />
+        </div>
+        <br>
+        <div class="form__item">
+            <label for="">Password</label>
+            <br>
+            <input type="password" [(ngModel)]="user.password" name="password" nz-input />
+        </div>
+        <br>
+        <div class="form__item">
+            <label for="">Role</label>
+            <br>
+            <nz-select [(ngModel)]="user.role" name="role">
+                <nz-option aria-selected="true" nzValue=1 nzLabel="Quản trị viên"></nz-option>
+            </nz-select>
+        </div>  
+        <br>
+        <div class="form__item">
+            <button nz-button nzType="primary">Submit</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,19 @@
+.container {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 3px black solid;
+}
+
+.container .sidebar {
+  width: 25%;
+}
+
+.container .content {
+  width: 73%;
+}
+/*# sourceMappingURL=admin.component.css.map */

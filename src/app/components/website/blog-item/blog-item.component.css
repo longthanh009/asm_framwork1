@@ -1,0 +1,102 @@
+.post__item {
+  padding: 20px;
+  background-color: white;
+  -webkit-box-shadow: 3px 2px 15px gainsboro;
+          box-shadow: 3px 2px 15px gainsboro;
+  border-radius: 1rem;
+}
+
+.post__item .post__item-image {
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 230px;
+}
+
+.post__item-detail-title {
+  margin: 0;
+}
+
+.post__item-detail-title-link {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+  -webkit-transition: all ease-in;
+  transition: all ease-in;
+}
+
+.post__item-detail-title-link:hover {
+  color: red;
+}
+
+.post__item-detail-time {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -1.2rem;
+}
+
+.post__item-detail-time span {
+  font-size: 1rem;
+  display: inline-block;
+  padding: 0 1.2rem;
+}
+
+.post__item-detail-time :first-child {
+  border-right: 1px solid black;
+}
+
+.post__item-detail-desc {
+  margin-top: 1rem;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+@media screen and (max-width: 567px) {
+  .post__item .post__item-image {
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: auto;
+  }
+  .post__item-detail-title {
+    margin: 0;
+  }
+  .post__item-detail-title-link {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    -webkit-transition: all ease-in;
+    transition: all ease-in;
+  }
+  .post__item-detail-title-link:hover {
+    color: red;
+  }
+  .post__item-detail-time {
+    margin-top: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: -1.2rem;
+  }
+  .post__item-detail-time span {
+    font-size: 1rem;
+    display: inline-block;
+    padding: 0 1.2rem;
+  }
+  .post__item-detail-time :first-child {
+    border-right: 1px solid black;
+  }
+  .post__item-detail-desc {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+}
+/*# sourceMappingURL=blog-item.component.css.map */

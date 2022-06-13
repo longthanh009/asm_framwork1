@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HearderComponent } from './components/website/hearder/hearder.component';
@@ -24,6 +23,21 @@ import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
 import { WebsiteComponent } from './components/layouts/website/website.component';
 import { AdminComponent } from './components/layouts/admin/admin.component';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
+import { NzTableModule } from 'ng-zorro-antd/table';
+import { NzSelectModule } from 'ng-zorro-antd/select';
+import { NzFormModule } from 'ng-zorro-antd/form';
+import { NzInputModule } from 'ng-zorro-antd/input';
+import { NzButtonModule } from 'ng-zorro-antd/button';
+import { CreatBlogComponent } from './pages/creat-blog/creat-blog.component';
+import { BlogManagerComponent } from './pages/blog-manager/blog-manager.component';
+import { ProjectManagerComponent } from './pages/project-manager/project-manager.component';
+import { CreatWorkComponent } from './pages/creat-work/creat-work.component';
+import { CategoryComponent } from './pages/category/category.component';
+import { LoginComponent } from './pages/login/login.component';
+import { CreatCategoryComponent } from './pages/creat-category/creat-category.component';
+import { UserManagerComponent } from './pages/user-manager/user-manager.component';
+import { CreatUserComponent } from './pages/creat-user/creat-user.component';
+import { ProjectDetailComponent } from './pages/project-detail/project-detail.component';
 registerLocaleData(en);
 
 @NgModule({
@@ -40,7 +54,17 @@ registerLocaleData(en);
     HearderAdminComponent,
     SideBarAdminComponent,
     WebsiteComponent,
-    AdminComponent
+    AdminComponent,
+    CreatBlogComponent,
+    BlogManagerComponent,
+    ProjectManagerComponent,
+    CreatWorkComponent,
+    CategoryComponent,
+    LoginComponent,
+    CreatCategoryComponent,
+    UserManagerComponent,
+    CreatUserComponent,
+    ProjectDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +73,12 @@ registerLocaleData(en);
     HttpClientModule,
     BrowserAnimationsModule,
     NzDropDownModule,
-    NzMenuModule
+    NzMenuModule,
+    NzTableModule,
+    NzFormModule,
+    NzInputModule,
+    NzButtonModule,
+    NzSelectModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]

@@ -1,0 +1,48 @@
+.container {
+  background-color: #a5a5f8;
+}
+
+.container .hearder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .hearder .admin {
+  width: 100px;
+}
+
+.container .hearder .admin .active__admin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 50px;
+}
+
+.container .hearder .admin .active__admin .admin__avatar {
+  -webkit-box-shadow: #747373 2px 2px 15px;
+          box-shadow: #747373 2px 2px 15px;
+  width: 40px;
+  height: 40px;
+  border-radius: 45%;
+}
+
+.container .hearder .admin .drop__menu {
+  margin-top: 50px;
+}
+
+.container .hearder .logo__admin {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 3rem;
+  padding: 0.5rem 3rem;
+  color: white;
+}
+/*# sourceMappingURL=hearder-admin.component.css.map */

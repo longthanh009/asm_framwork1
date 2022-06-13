@@ -1,0 +1,24 @@
+<div>
+    <h2>Category Mannager</h2>
+    <div>
+        <nz-table #basicTable [nzData]="categorys">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Name</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let item of categorys, let i =index ">
+                <tr>
+                    <td>{{i+1}}</td>
+                    <td>{{item.name}}</td>
+                    <td>
+                        <a nz-button routerLink="/admin/categorys/{{item._id}}/update" nzType="dashed">Edit</a>
+                        <button nz-button (click)="removeCate(item._id!)" nzType="primary">Remove</button>
+                    </td>
+                </tr>
+            </tbody>
+        </nz-table>
+    </div>
+</div>

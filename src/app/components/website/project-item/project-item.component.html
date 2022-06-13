@@ -1,21 +1,18 @@
 <article class="projects__item">
     <div class="projects__item-image">
-        <img src="https://static.vecteezy.com/packs/media/components/global/search-explore-nav/img/vectors/term-bg-1-666de2d941529c25aa511dc18d727160.jpg"
+        <img src={{project.img}}
             alt="">
     </div>
     <div class="projects__item-detail">
         <h3 class="projects__item-detail-title">
-            <a href="" class="projects__item-detail-title-link">Designing
-                Dashboards</a>
+            <a href="/my-works/{{project._id}}" class="projects__item-detail-title-link">{{project.title}}</a>
         </h3>
         <div class="projects__item-detail-time">
-            <span>2020</span>
+            <span>{{project.createdAt}}</span>
             <span>Dashboard</span>
         </div>
         <p class="projects__item-detail-desc">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor
-            do amet sint. Velit officia consequat duis enim velit
-            mollit. Exercitation veniam consequat sunt nostrud amet.
+            {{project.center}}
         </p>
     </div>
 </article>

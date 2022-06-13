@@ -1,0 +1,16 @@
+.container {
+  padding: 0 10%;
+  margin-top: 3rem;
+}
+
+@media screen and (max-width: 567px) {
+  .container {
+    width: 100%;
+    padding: 0 5%;
+  }
+  .heading {
+    padding-left: 1rem;
+    font-size: 1.5rem;
+  }
+}
+/*# sourceMappingURL=work-page.component.css.map */

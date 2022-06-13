@@ -1,0 +1,26 @@
+<div>
+    <h2>Blogs Mannager</h2>
+    <div>
+        <nz-table #basicTable [nzData]="blogs">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Title</th>
+                    <th>Mounting description</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let item of blogs, let i =index ">
+                <tr>
+                    <td>{{i+1}}</td>
+                    <td>{{item.title}}</td>
+                    <td>{{item.center}}</td>
+                    <td>
+                        <a nz-button routerLink="/admin/blogs/{{item._id}}/update" nzType="dashed">Edit</a>
+                        <button nz-button (click)="removeBlog(item._id!)" nzType="primary">Remove</button>
+                    </td>
+                </tr>
+            </tbody>
+        </nz-table>
+    </div>
+</div>

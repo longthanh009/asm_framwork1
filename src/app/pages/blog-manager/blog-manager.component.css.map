@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "blog-manager.component.scss"
+    ],
+    "names": [],
+    "file": "blog-manager.component.css"
+}

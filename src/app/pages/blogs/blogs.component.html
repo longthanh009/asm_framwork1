@@ -2,9 +2,7 @@
     <div class="heading">
         <h2>Blogs</h2>
     </div>
-    <section class="blogs">
-        <app-blog-item></app-blog-item>
-        <app-blog-item></app-blog-item>
-        <app-blog-item></app-blog-item>
+    <section class="posts" *ngFor="let item of blogs">
+        <app-blog-item [blog]="item"></app-blog-item>
     </section>
 </div>

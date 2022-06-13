@@ -3,7 +3,7 @@
     padding: 1.5rem 0;
     border-bottom: 1px solid rgb(216, 216, 216);
     &-image{
-        width: 40%;
+        width: 30%;
         & img {
             width: 100%;
             border-radius: 0.6rem;
@@ -11,12 +11,14 @@
         }
     }
     &-detail {
+        width: 70%;
         padding: 0 2rem;
         &-title {
             margin: 0;
             &-link {
                 color: black;
                 text-decoration: none;
+                font-size: 1.5rem;
                 &:hover {
                     color: red;
                 }
@@ -37,7 +39,7 @@
         }
         &-desc {
             margin-top: 1rem;
-            font-family: 1rem;
+            font-size: 1rem;
         }
     }
 }
@@ -53,6 +55,7 @@
             }
         }
         &-detail {
+            width: 100%;
             &-title {
                 font-size: 1.5rem;
                 margin: 0;

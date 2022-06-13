@@ -1,18 +1,13 @@
 <article class="post__item">
-    <img src="https://static.remove.bg/remove-bg-web/669d7b10b2296142983fac5a5243789bd1838d00/assets/start-1abfb4fe2980eabfbbaaa4365a0692539f7cd2725f324f904565a9a744f8e214.jpg"
-        alt="" class="post__item-image">
+    <img src={{blog.img}} class="post__item-image">
     <div class="post__item-detail">
         <h3 class="post__item-detail-title">
-            <a href="" class="post__item-detail-title-link"> Making a
-                design system from scratch</a>
+            <a routerLink="/blogs/{{blog._id}}" class="post__item-detail-title-link"> {{blog.title}}</a>
         </h3>
         <div class="post__item-detail-time">
-            <span>12 Feb 2020</span>
+            <span>{{blog.createdAt}}</span>
             <span>Design, Pattern</span>
         </div>
-        <p class="post__item-detail-desc">Amet minim mollit non deserunt
-            ullamco est sit aliqua dolor do amet sint. Velit officia
-            consequat duis enim velit mollit. Exercitation veniam
-            consequat sunt nostrud amet.</p>
+        <p class="post__item-detail-desc">{{blog.center}}</p>
     </div>
 </article>

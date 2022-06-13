@@ -1,0 +1,15 @@
+<div class="container">
+    <h2>New Category</h2>
+    <form (ngSubmit)="onSubmit()" #formAdd="ngForm">
+        <div class="form__item">
+            <label for="">Name</label>
+            <br>
+            <input #name="ngModel" required [(ngModel)]="category.name" name="name" nz-input
+                placeholder="Category Name" />
+        </div>
+        <br>
+        <div class="form__item">
+            <button [disabled]="!formAdd.valid" nz-button nzType="primary">Submit</button>
+        </div>
+    </form>
+</div>
