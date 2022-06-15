@@ -11,5 +11,5 @@ export class HearderComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  
 }

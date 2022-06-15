@@ -21,6 +21,6 @@ export class ProjectService {
     return this.http.delete<IProject>(`http://localhost:3001/api/projects/${id}`)
   }
   update(project: any){
-    return this.http.put(`http://localhost:3001/api/projects/${project.id}`,project)
+    return this.http.put(`http://localhost:3001/api/projects/${project._id}`,project)
   }
 }

@@ -2,23 +2,32 @@
 	<div class="screen">
 		<div class="screen__content">
 			<form class="login" (ngSubmit)="onSubmit()" #formAdd="ngForm">
-                <h1>Amin Login</h1>
+				<h1>Amin Login</h1>
 				<div class="login__field">
 					<i class="login__icon fas fa-user"></i>
-					<input #email="ngModel" required [(ngModel)]="user.email" name="email" type="text" class="login__input" placeholder="Email">
+					<input #email="ngModel" required [(ngModel)]="user.email"
+						name="email" type="text" class="login__input"
+						placeholder="Email">
 					<br>
-					<label class="lable-err" for="" *ngIf="email.errors?.['required']">Không được để trống</label>
+					<label class="lable-err" for=""
+						*ngIf="email.errors?.['required']">Không được để
+						trống</label>
 				</div>
 				<div class="login__field">
 					<i class="login__icon fas fa-lock"></i>
-					<input #password="ngModel" required [(ngModel)]="user.password" name="password" type="password" class="login__input" placeholder="Password">
+					<input #password="ngModel" required
+						[(ngModel)]="user.password" name="password"
+						type="password" class="login__input"
+						placeholder="Password">
 					<br>
-					<label class="lable-err"  for="" *ngIf="email.errors?.['required']">Nhập password</label>
+					<label class="lable-err" for=""
+						*ngIf="email.errors?.['required']">Nhập password</label>
 				</div>
-				<button [disabled]="!formAdd.valid" class="button login__submit">
+				<button [disabled]="!formAdd.valid"
+					class="button login__submit">
 					<span class="button__text">Log In Now</span>
 					<i class="button__icon fas fa-chevron-right"></i>
-				</button>				
+				</button>
 			</form>
 			<div class="social-login">
 				<h3>log in via</h3>
@@ -30,10 +39,14 @@
 			</div>
 		</div>
 		<div class="screen__background">
-			<span class="screen__background__shape screen__background__shape4"></span>
-			<span class="screen__background__shape screen__background__shape3"></span>		
-			<span class="screen__background__shape screen__background__shape2"></span>
-			<span class="screen__background__shape screen__background__shape1"></span>
-		</div>		
+			<span
+				class="screen__background__shape screen__background__shape4"></span>
+			<span
+				class="screen__background__shape screen__background__shape3"></span>
+			<span
+				class="screen__background__shape screen__background__shape2"></span>
+			<span
+				class="screen__background__shape screen__background__shape1"></span>
+		</div>
 	</div>
 </div>

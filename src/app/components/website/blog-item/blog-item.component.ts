@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import * as moment from 'moment';
 import { IBlog } from 'src/app/models/blog';
 
 @Component({
@@ -7,6 +8,7 @@ import { IBlog } from 'src/app/models/blog';
   styleUrls: ['./blog-item.component.scss']
 })
 export class BlogItemComponent implements OnInit {
+  moment = moment();
   @Input() blog! : IBlog
   constructor() { }
   

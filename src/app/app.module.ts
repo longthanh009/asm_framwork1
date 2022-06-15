@@ -34,6 +34,7 @@ import { ProjectManagerComponent } from './pages/project-manager/project-manager
 import { CreatWorkComponent } from './pages/creat-work/creat-work.component';
 import { CategoryComponent } from './pages/category/category.component';
 import { LoginComponent } from './pages/login/login.component';
+import * as moment from 'moment';
 import { CreatCategoryComponent } from './pages/creat-category/creat-category.component';
 import { UserManagerComponent } from './pages/user-manager/user-manager.component';
 import { CreatUserComponent } from './pages/creat-user/creat-user.component';
@@ -80,7 +81,7 @@ registerLocaleData(en);
     NzButtonModule,
     NzSelectModule
   ],
-  providers: [{ provide: NZ_I18N, useValue: en_US }],
+  providers: [{ provide:"moment", useValue: en_US }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

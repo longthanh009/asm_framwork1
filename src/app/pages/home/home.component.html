@@ -7,7 +7,7 @@
             ullamco est sit aliqua dolor do amet sint. Velit officia
             consequat duis enim velit mollit. Exercitation veniam consequat
             sunt nostrud amet.</p>
-        <button class="btn btn__dowload">Download Resume</button>
+        <a target="_self" href="../../../assets/KHUAT-THANH-LONG-TopCV.vn-020622.172113.pdf" download="" class="btn btn__dowload">Download Resume</a>
     </div>
     <div class="information__avatar">
         <img class="information__avatar-image"
@@ -20,7 +20,7 @@
         <h2 class="">Recent posts</h2>
         <a href="">View all</a>
     </div>
-    <div class="posts">
+    <div class="posts" *ngIf="blogs">
         <app-blog-item [blog]="blogs[0]"></app-blog-item>
         <app-blog-item [blog]="blogs[1]"></app-blog-item>
         <!-- <app-blog-item></app-blog-item> -->
